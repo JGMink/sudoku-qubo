@@ -1,0 +1,21 @@
+[project]
+name = "quantum-annealing-for-sudoku"
+version = "0.1.0"
+description = "Sudoku as a QUBO: formulation, variable elimination, and D-Wave/simulated-annealing benchmarks"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "jupyter>=1.0.0",
+    "matplotlib>=3.3.0",
+    "notebook>=6.4.0",
+    "numpy>=1.20.0",
+    "pandas>=2.0.0",
+    "seaborn>=0.11.0",
+]
+
+[project.optional-dependencies]
+# D-Wave: simulated annealing (neal), hybrid solver, QPU access.
+# Needed for qpu_experiments/*.py and notebook section 8.
+dwave = ["dwave-ocean-sdk>=9.2.0"]
+# Qiskit: gate-based QAOA comparison (notebook section 9).
+qaoa = ["qiskit>=1.0", "qiskit-algorithms>=0.3", "qiskit-optimization>=0.6"]

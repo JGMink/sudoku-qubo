@@ -1,0 +1,8 @@
+# Qiskit: gate-based QAOA comparison.
+# Needed for: notebook section 9 (Qiskit Simulated Quantum Annealing / QAOA).
+#
+# Install: pip install -r requirements.txt -r requirements-qaoa.txt
+
+qiskit>=1.0
+qiskit-algorithms>=0.3
+qiskit-optimization>=0.6

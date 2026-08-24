@@ -1,0 +1,9 @@
+# D-Wave: simulated annealing (neal), hybrid solver, and QPU access.
+# Needed for: qpu_experiments/*.py, notebook section 8 (Simulated Annealing).
+#
+# Install: pip install -r requirements.txt -r requirements-dwave.txt
+#
+# QPU/hybrid solving also requires a D-Wave Leap account with an API token
+# set as the DWAVE_API_TOKEN environment variable (never commit it).
+
+dwave-ocean-sdk>=9.2.0   # bundles dimod, neal, dwave-system, minorminer
